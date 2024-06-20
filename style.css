@@ -1,0 +1,1144 @@
+
+
+
+/*=================== Bolier Plate =================*/
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    max-width: 100vw;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+
+h1, h2, h3{
+    color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+img, form, input, textarea{
+    max-width: 100%;
+    border: none;
+}
+
+
+input {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+}
+
+
+textarea::placeholder, textarea, button, input{
+    font-family: inherit;
+    font-size: inherit;
+    overflow: hidden;
+    resize: none;
+}
+
+section{
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+
+/*==================== Bolier Plate End ==============*/
+
+/*======================== Root ======================*/
+
+
+:root{
+
+    /* Font Family */
+    font-family: "Inter", sans-serif;
+
+    /* Font Size */
+    --font-size-extra-large-: 36px;
+    --font-size-large-: 25px;
+    --font-size-medium-: 21px;
+    --font-size-small-: 14px;
+
+    /* Font Weight */
+    --font-weight-bold-: 900;
+    --font-weight-regular-: 400;
+    --font-weight-Thin-: 200;
+
+    /* Colours */
+    --colour-primary-: #0F2E4C;
+    --colour-accent-: #B99425;
+    --colour-neutral-: white;
+    --colour-dark-: black;
+
+    /* Spacing */
+    --spacing-1-: 100px;
+    --spacing-2-: 100px;
+    --spacing-3-: 50px;
+    --spacing-4-: 40px;
+    --spacing-5-: 30px;
+    --spacing-6-: 20px;
+    --spacing-7-: 15px;
+    --spacing-8-: 10px;
+    --spacing-9-: 7.5px;
+    --spacing-10-: 5px;
+    --spacing-11-: 2px;
+
+    /* hamburger Menu */
+    --bar-width-: 40px;
+    --bar-height-: 6px;
+    --hamburger-gap-: 4px;
+    --hamburger-margin-: 12px;
+    --animation-timing-: 200ms ease-in-out;
+    --hamburger-height-: calc(var(--bar-height-) * 3 + var(--hamburger-gap-) * 2);
+    --hamburger-menu-block-padding-: 30px;
+}
+
+
+/*===================== Root End =================*/
+
+
+
+/*==================== Type =====================*/
+
+
+.title{
+    font-size: var(--font-size-extra-large-);
+    font-weight: var(--font-weight-bold-);
+    color: var(--colour-primary-);
+    line-height: 32px;
+}
+.heading{
+    font-size: var(--font-size-large-);
+    font-weight: var(--font-weight-bold-);
+    color: var(--colour-primary-);
+}
+.heading-neutral{
+    font-size: var(--font-size-large-);
+    font-weight: var(--font-weight-bold-);
+    color: var(--colour-neutral-);
+}
+.heading-2{
+    font-size: var(--font-size-medium-);
+    font-weight: var(--font-weight-regular-);
+    color: var(--colour-primary-);
+}
+.heading-3{
+    font-size: var(--font-size-small-);
+    font-weight: var(--font-weight-bold-);
+    color: var(--colour-primary-);
+}
+.heading-3-neutral{
+    font-size: var(--font-size-small-);
+    font-weight: var(--font-weight-bold-);
+    color: var(--colour-neutral-);
+}
+.copy{
+    font-size: var(--font-size-small-);
+    font-weight: var(--font-weight-regular-);
+    color: var(--colour-dark-);
+}
+.menu-copy{
+    font-size: var(--font-size-small-);
+    font-weight: var(--font-weight-regular-);
+    color: var(--colour-dark-);
+    padding-bottom: var(--spacing-9-);
+}
+.copy-neutral{
+    font-size: var(--font-size-small-);
+    font-weight: var(--font-weight-regular-);
+    color: var(--colour-neutral-);
+}
+.comment{
+    font-size: var(--font-size-small-);
+    font-weight: var(--font-weight-Thin-);
+    color: var(--colour-dark-);
+    font-style: italic;
+}
+.link-type{
+    font-size: var(--font-size-small-);
+    font-weight: var(--font-weight-regular-);
+    color: var(--colour-neutral-);
+    text-decoration: underline;
+}
+
+
+/*==================== Type End ======================*/
+
+
+
+/*==================== Buttons ======================*/
+
+
+.button-primary{
+    font-size: var(--font-size-small-);
+    font-weight: var(--font-weight-bold-);
+    color: var(--colour-neutral-);
+    background-color: var(--colour-primary-);
+    padding-inline: var(--spacing-6-);
+    padding-block: var(--spacing-8-);
+    border-radius: 10px;
+    width: max-content;
+}
+.button-secondary{
+    font-size: var(--font-size-small-);
+    font-weight: var(--font-weight-bold-);
+    color: var(--colour-primary-);
+    padding-inline: var(--spacing-6-);
+    padding-block: var(--spacing-8-);
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--colour-primary-);
+    width: max-content;
+}
+
+
+/*================== Buttons End ========================*/
+
+
+
+/*================== Images ============================*/
+
+.image{
+    width: 100%;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+.review-image-1, .review-image-2{
+    background-image: url(img/coffee-image.jpg);
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+.see-our-menu-image{
+    background-image: url(img/afternoon-tea-2.jpg);
+    width: 100%;
+    height: 100vw;
+    background-size: cover;
+    background-position: top;
+}
+.meet-the-team-image{
+    background-image: url(img/meet-the-team.jpg);
+    width: 100%;
+    height: 100vw;
+    background-size: cover;
+    background-position: top;
+}
+.opening-time-seasonal-closures-image{
+    background-image: url(img/seasonal-closures.jpg);
+    width: 100%;
+    height: 100vw;
+    background-size: cover;
+    background-position: top;
+}
+.menu-coffee-image{
+    background-image: url(img/coffee-image.jpg);
+    width: 100%;
+    height: 100vw;
+    background-size: cover;
+    background-position: top;
+}
+.menu-tea-image{
+    background-image: url(img/teas.jpg);
+    width: 100%;
+    height: 100vw;
+    background-size: cover;
+    background-position: top;
+}
+.menu-hot-chocolate-image{
+    background-image: url(img/hot-chocolate.jpg);
+    width: 100%;
+    height: 100vw;
+    background-size: cover;
+    background-position: top;
+}
+.menu-soft-drinks-image{
+    background-image: url(img/soft-drinks.jpg);
+    width: 100%;
+    height: 100vw;
+    background-size: cover;
+    background-position: center;
+}
+.menu-iced-coffee-image{
+    background-image: url(img/iced-coffee.jpg);
+    width: 100%;
+    height: 100vw;
+    background-size: cover;
+    background-position: center;
+}
+.menu-milkshake-image{
+    background-image: url(img/milkshake.jpg);
+    width: 100%;
+    height: 100vw;
+    background-size: cover;
+    background-position: center;
+}
+.menu-hero-image{
+    background-image: url(img/entrance.jpg);
+    width: 100%;
+    height: 85vh;
+    background-size: cover;
+    background-position: center-bottom;
+}
+.hero-home-image{
+    background-image: url(img/home-hero-below-700px.jpg);
+    width: 100%;
+    height: 85vh;
+    background-size: cover;
+    background-position: center-bottom;
+}
+/*================== Images End =======================*/
+
+
+
+/*=================== Cards ==========================*/
+
+.review-card-container{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-7-);
+}
+
+.review-card{
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+.review-card__copy-block{
+    padding: var(--spacing-6-);
+}
+.review-card__heading-gap{
+    padding-bottom: var(--spacing-6-);
+}
+
+
+/*================= Cards End ====================*/
+
+
+
+/*================= Footers ======================*/
+
+footer{
+    background-color: var(--colour-primary-);
+    padding-block: var(--spacing-2-);
+}
+
+.footer__flex-container{
+    width: 80%;
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-element-gap{
+    padding-bottom: var(--spacing-3-);
+}
+
+.footer__logo{
+    display: none;
+}
+
+.footer__heading-gap{
+    padding-bottom: var(--spacing-7-)
+}
+
+.footer__socials-flex-container{
+    display: flex;
+    gap: var(--spacing-8-);
+}
+
+.footer__contact-flex-container, .footer__tandc-flex-container{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-9-);
+}
+
+.social-icon{
+    width: 40px;
+}
+
+
+/*=============== Footers ===================*/
+
+
+
+/*================ Headers ==================*/
+
+header{
+    background-color: var(--colour-primary-);
+    height: 50px;
+    position: sticky;
+    top: 0px;
+}
+
+.header-desktop{
+    display: none;
+}
+
+.header__logo{
+    max-width: 100px;
+    padding-top: var(--hamburger-margin-);
+    padding-left: var(--spacing-7-);
+}
+
+/* Hamburger */
+.hamburger-menu{
+    --x-width-: calc(var(--hamburger-height-) * 1.41421356237);
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--hamburger-gap-);
+    width: max-content;
+    position: absolute;
+    top: var(--hamburger-margin-);
+    right: var(--hamburger-margin-);
+    z-index: 2;
+}
+.hamburger-menu::before, .hamburger-menu::after, .hamburger-menu input {
+    content: "";
+    width: var(--bar-width-);
+    height: var(--bar-height-);
+    background-color: var(--colour-neutral-);
+    border-radius: 100px;
+    transform-origin: left center;
+    transition: opacity var(--animation-timing-), width var(--animation-timing-), rotate var(--animation-timing-), translate var(--animation-timing-);
+}
+.hamburger-menu input {
+    outline: none;
+    pointer-events: none;
+}
+
+
+/* Hamburger When Clicked */
+.hamburger-menu input:checked {
+    opacity: 0;
+    width: 0;
+}
+.hamburger-menu:has(input:checked)::before {
+    rotate: 45deg;
+    width: var(--x-width-);
+    translate: 0 calc(var(--bar-height-) / -2);
+}
+.hamburger-menu:has(input:checked)::after {
+    rotate: -45deg;
+    width: var(--x-width-);
+    translate: 0 calc(var(--bar-height-) / 2);
+}
+
+
+/* The Menu */
+.hamburger-menu-block{
+    position: fixed;
+    right: 0;
+    top: calc(var(--hamburger-height-) + var(--hamburger-margin-) + var(--hamburger-margin-));
+    background-color: var(--colour-primary-);
+    padding: var(--hamburger-menu-block-padding-);
+    translate: 100%;
+    transition: translate var(--animation-timing-);
+    border-style: solid;
+    border-color: var(--colour-neutral-);
+    border-width: 2px;
+}
+.hamburger-menu-list{
+    display: flex;
+    flex-direction: column;
+    width: 160px;
+    align-items: center;
+}
+.hamburger-menu-list-item{
+    color: var(--colour-neutral-);
+    border-bottom: 1px solid var(--colour-neutral-);
+    width: 160px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    color: var(--colour-neutral-);
+    font-size: var(--font-size-small-);
+    font-weight: var(--font-weight-regular-);
+}
+
+/* The Menu When Clicked */
+.hamburger-menu:has(input:checked) + .hamburger-menu-block{
+    translate: none;
+}
+
+
+/*============== Headers End ========================*/
+
+
+
+/*=============== Forms =============================*/
+
+.forms{
+    width: 100%;
+    max-width: 100%;
+}
+
+.form__container{
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    padding: var(--spacing-5-);
+    background-color: var(--colour-neutral-);
+
+}
+
+.form__heading-gap{
+    padding-bottom: var(--spacing-5-);
+}
+
+.form__flex-container{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-9-);
+}
+
+.input, .input::placeholder{
+    font-size: var(--font-size-medium-);
+    font-weight: var(--font-weight-regular-);
+    color: var(--colour-neutral-);
+}
+.input{
+    background-color: var(--colour-primary-);
+    width: 100%;
+    padding: var(--spacing-7-);
+}
+.form-button{
+    margin: 0 auto;
+}
+
+
+/*============== Forms End ========================*/
+
+
+
+/*============== Sections ========================*/
+/*==============          ========================*/
+
+
+
+/*============== Standard content section =======*/
+
+
+/*============== Standard content section End====*/
+
+/*============== Standard Content Section Button ==*/
+
+
+.standard-section__copy-container{
+    padding: var(--spacing-3-);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-6-);
+    margin: 0 auto;
+}
+.section-image{
+    object-fit: cover;
+}
+
+/*=========== Standard Content Section Button End ==*/
+
+/*=========== Opening hourse + seasonal closures ===*/
+.opening-hours-heading-gap{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-6-);
+}
+
+
+
+/*=========== Menu content section ==============*/
+
+
+.menu-content-image-left__copy-container{
+    padding: var(--spacing-3-);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4-);
+}
+
+.menu-item-heading{
+    padding-bottom: var(--spacing-6-);
+}
+.choices-padding{
+    padding-bottom: var(--spacing-8-);
+}
+.extras-padding-top{
+    padding-top: var(--spacing-6-);
+}
+.menu-image-mobile-display-none{
+    display: none;
+}
+
+.title-section{
+    padding-top: var(--spacing-3-);
+    padding-bottom: var(--spacing-5-);
+    width: 80%;
+    margin: 0 auto;
+}
+
+/*========== Menu Content Section End ========*/
+
+
+/*========== hero Section ===================*/
+
+.hero-section{
+    width: 100%;
+    max-width: 100%;
+}
+.hero-image{
+    width: 100%;
+}
+.hero__copy-container{
+    max-width: 950px;
+    width: 75%;
+    padding-block: var(--spacing-3-);
+    margin: 0 auto;
+}
+
+.hero-home-image{
+    background-image: url(img/home-hero-below-700px.jpg);
+    width: 100%;
+    height: 85vh;
+    background-size: cover;
+    background-position: center-bottom;
+}
+
+
+/*============= Utility classes =========================*/
+
+.section-gap{
+    padding-bottom: var(--spacing-3-);
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-gap-spacing-9{
+    gap: var(--spacing-9-);
+}
+
+.see-our-menu-grid, .meet-the-team-grid, .opening-hours-seasonal-closures-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.coffee-grid, .menu-tea-grid, .menu-hot-chocolate-grid, .menu-soft-drinks-grid, .menu-iced-coffee-grid, .menu-milkshake-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.menu-breakfast-grid, .menu-lunch-grid, .menu-tea-time-grid, .menu-childrens-menu-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.display-none-mobile-tablet{
+    display: none;
+}
+
+/*============ Block =================================*/
+.opening-hours-element-gap{
+    padding-bottom: var(--spacing-5-);
+}
+
+/*========== Allergen information ====================*/
+.allergen-information{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-8-);
+    width: 85%;
+    max-width: 650px;
+    margin: 0 auto;
+}
+.vva-flex-container{
+    display: flex;
+    flex-direction: column;
+}
+
+/*=================== Google Map ==========================*/
+.map-iframe{
+    height: 200px;
+    width: 100%;
+}
+.map{
+    width: 100%;
+    max-width: 100%;
+}
+
+
+/*================ media quires ===============*/
+
+
+@media (min-width: 700px){
+
+/*=============== Utility Classes =============*/
+.section-gap{
+    padding-bottom: var(--spacing-1-);
+}
+.display-none-mobile-tablet{
+    display: none;
+}
+
+/*================== Images ============================*/
+
+.review-image-1, .review-image-2{
+    background-image: url(img/coffee-image.jpg);
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+.see-our-menu-image{
+    background-image: url(img/afternoon-tea-2.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: top;
+}
+.meet-the-team-image{
+    background-image: url(img/meet-the-team.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: top;
+}
+.opening-time-seasonal-closures-image{
+    background-image: url(img/seasonal-closures.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.menu-coffee-image{
+    background-image: url(img/coffee-image.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.menu-tea-image{
+    background-image: url(img/teas.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: bottom;
+}
+.menu-hot-chocolate-image{
+    background-image: url(img/hot-chocolate.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.menu-soft-drinks-image{
+    background-image: url(img/soft-drinks.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.menu-iced-coffee-image{
+    background-image: url(img/iced-coffee.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.menu-milkshake-image{
+    background-image: url(img/milkshake.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+/*=============== Review Card ==================*/
+.review-card-container{
+    flex-direction: row;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.review-card{
+    width: 100%;
+    max-width: 100%;
+}
+
+
+/*============== Standard Content Section Button ==*/
+
+
+.standard-section-flex-container{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.section-image{
+    width: 45vw;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.copy-right{
+    padding-right: 0px;
+    margin: 0;
+}
+
+
+
+/*=========== Standard Content Section Button End ==*/
+
+/*=========== Standard Section Image Right ==========*/
+
+.image-right{
+    order: 2;
+}
+.image-right-container{
+    justify-content: space-between;
+}
+.copy-left{
+    order: 1;
+    padding-left: 20px;
+}
+
+
+.hero-home-image{
+    background-image: url(img/home-hero-700px.jpg);
+    width: 100%;
+    height: 85vh;
+}
+
+.menu-heading-spacing{
+    padding-top: var(--spacing-5-);
+}
+
+/*======== Standard Section image right end ==========*/
+
+/*============= Utility Classes =====================*/
+
+.see-our-menu-grid, .meet-the-team-grid, .opening-hours-seasonal-closures-grid{
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    margin: 0 auto;
+    grid-template-rows: 90vh;
+    align-items: center;
+}
+.opening-hours-seasonal-closures-grid{
+    grid-template-rows: 120vh;
+}
+.grid-image-left{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.grid-copy-right{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.grid-image-right{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.grid-copy-left{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.coffee-grid, .menu-tea-grid, .menu-hot-chocolate-grid, .menu-soft-drinks-grid, .menu-iced-coffee-grid, .menu-milkshake-grid{
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    margin: 0 auto;
+    grid-template-rows: 90vh;
+    align-items: center;
+}
+.menu-breakfast-grid, .menu-lunch-grid, .menu-tea-time-grid, .menu-childrens-menu-grid{
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    margin: 0 auto;
+    grid-template-rows: min-content;
+    align-items: start;
+}
+.menu-image-mobile-display-none{
+    display: block;
+}
+.coffee-grid{
+    grid-template-rows: 600px;
+}
+
+
+/*============ Block ==================*/
+/*========== Allergen information ====================*/
+.vva-flex-container{
+    flex-direction: row;
+    margin: 0 auto;
+    gap: var(--spacing-9-);
+}
+
+
+}
+
+
+@media (min-width: 1000px) {
+
+    :root{
+
+    /* Font Size */
+    --font-size-extra-large-: 50px;
+    --font-size-large-: 25px;
+    --font-size-medium-: 21px;
+    --font-size-small-: 14px;
+
+    /* Colours */
+    --colour-primary-: #0F2E4C;
+    --colour-accent-: #B99425;
+    --colour-neutral-: white;
+    --colour-dark-: black;
+
+    /* Spacing */
+    --spacing-1-: 280px;
+    --spacing-2-: 140px;
+    --spacing-3-: 100px;
+    --spacing-4-: 60px;
+    --spacing-5-: 40px;
+    --spacing-6-: 30px;
+    --spacing-7-: 20px;
+    --spacing-8-: 15px;
+    --spacing-9-: 7px;
+    --spacing-10-: 4px;
+    --spacing-11-: 2px;
+
+    /* hamburger Menu */
+    --bar-width-: 40px;
+    --bar-height-: 6px;
+    --hamburger-gap-: 4px;
+    --hamburger-margin-: 12px;
+    --animation-timing-: 200ms ease-in-out;
+    --hamburger-height-: calc(var(--bar-height-) * 3 + var(--hamburger-gap-) * 2);
+    --hamburger-menu-block-padding-: 30px;
+}
+
+/*==================== Type =====================*/
+
+.title{
+    font-size: 70px;
+    font-weight: var(--font-weight-bold-);
+    color: var(--colour-primary-);
+    line-height: 65px;
+}
+.hero-subheading{
+    font-size: 35px;
+    padding-left: 10px;
+}
+.hero-copy{
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+/*==================== Type End ======================*/
+
+/*==================== Buttons ======================*/
+
+
+.button-primary{
+    padding-block: var(--spacing-9-);
+    
+}
+.button-secondary{
+    padding-block: var(--spacing-9-);
+}
+
+
+/*================== Buttons End ========================*/
+    
+
+/*=================== Cards ==========================*/
+
+
+.review-card__heading-gap{
+    padding-bottom: var(--spacing-7-);
+}
+
+
+/*================= Cards End ====================*/
+
+
+
+/*================= Footers ======================*/
+
+
+footer{
+    background-color: var(--colour-primary-);
+    padding-block: 50px;
+}
+
+.footer__flex-container{
+    flex-direction: row;
+    max-width: 80%;
+    gap: var(--spacing-4-);
+}
+
+.footer-element-gap{
+    padding-bottom: 0px;
+}
+
+.footer__logo{
+    display: inline-block;
+    max-width: 180px;
+}
+
+.footer__socials-container{
+    margin-left: auto;
+}
+
+.footer__heading-gap{
+    padding-bottom: var(--spacing-8-)
+}
+
+.footer__socials-flex-container{
+    display: flex;
+    gap: var(--spacing-9-);
+}
+
+.footer__contact-flex-container, .footer__tandc-flex-container{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-9-);
+}
+
+.social-icon{
+    width: 40px;
+}
+
+
+/*=============== Footers ===================*/
+
+
+/*================ Headers ==================*/
+.mobile-header{
+    display: none;
+}
+.header-desktop{
+    display: block;
+}
+header{
+    background-color: var(--colour-primary-);
+    height: auto;
+}
+.header__logo{
+    max-width: 100px;
+    padding-top: 0px;
+    padding-left: 0px;
+}
+.header-desktop__content-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: var(--spacing-5-);
+    padding-left: var(--spacing-6-);
+    padding-block: var(--spacing-8-);
+}
+.header-desktop__nav-flex-container{
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-7-);
+}
+.primary-header-link{
+    color: var(--colour-accent-);
+}
+
+
+
+/*============== Headers End ========================*/
+
+
+
+/*=============== Forms =============================*/
+
+.forms{
+    background-image: url(img/Forms-background.png);
+    background-size: cover;
+    padding-top: var(--spacing-5-);
+}
+
+.form__container{
+    width: 90%;
+    max-width: 400px;
+    margin-left: var(--spacing-5-);
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    padding: var(--spacing-5-);
+}
+
+/*============== Forms End ========================*/
+
+
+/*======== Menu Section image left ===================*/
+
+.menu-content-section__flex-container{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.menu-image-flex-container{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-7-);
+    align-items: center;
+}
+
+.menu-content-image-left__copy-container{
+    max-width: 100%;
+    margin: 0;
+    padding-block: 0px;
+}
+
+.menu-section-image{
+    width: 505px;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.menu-heading-spacing{
+    padding-top: var(--spacing-5-);
+}
+
+/*========== hero Section ===================*/
+
+.hero__copy-container{
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/*=============== Utility Classes =============*/
+.section-gap{
+    padding-bottom: var(--spacing-2-);
+}
+.display-none-mobile-tablet{
+    display: block;
+}
+
+.hero-home-image{
+    background-image: url(img/home-hero-1000px.jpg);
+    width: 100%;
+    height: 85vh;
+}
+
+}
