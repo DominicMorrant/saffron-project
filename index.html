@@ -20,10 +20,10 @@
             </label>
             <nav class="hamburger-menu-block">
                 <ul class="hamburger-menu-list">
-                    <li><a href=""><p class="hamburger-menu-list-item">Home</p></a></li>
-                    <li><a href=""><p class="hamburger-menu-list-item">Menu</p></a></li>
-                    <li><a href=""><p class="hamburger-menu-list-item">Contact</p></a></li>
-                    <li><a href=""><p class="hamburger-menu-list-item">Open Hours</p></a></li>
+                    <li><a href="/."><p class="hamburger-menu-list-item">Home</p></a></li>
+                    <li><a href="menu"><p class="hamburger-menu-list-item">Menu</p></a></li>
+                    <li><a href="#contact-us"><p class="hamburger-menu-list-item">Contact</p></a></li>
+                    <li><a href="#opening-hours"><p class="hamburger-menu-list-item">Open Hours</p></a></li>
                 </ul> 
             </nav>
         </div>
@@ -33,9 +33,9 @@
         <div class="header-desktop__content-container">
             <div class="header__logo"><img src="img/logo.png" alt=""></div>
             <nav class="header-desktop__nav-flex-container">
-                <li><a href="#"><p class="heading-3-neutral">Home</p></a></li>
-                <li><a href="#"><p class="heading-3-neutral primary-header-link">Menu</p></a></li>
-                <li><a href="#"><p class="heading-3-neutral">Contact</p></a></li>
+                <li><a href="/."><p class="heading-3-neutral">Home</p></a></li>
+                <li><a href="menu"><p class="heading-3-neutral primary-header-link">Menu</p></a></li>
+                <li><a href="#contact-us"><p class="heading-3-neutral">Contact</p></a></li>
             </nav>
         </div>
     </header>
@@ -56,7 +56,7 @@
         <div class="standard-section__copy-container grid-copy-right">
             <p class="heading">See Our Menu</p>
             <p class="copy">We offer a delightful selection of expertly crafted coffees, teas, and refreshing beverages. Enjoy our fresh daily pastries, from buttery croissants to delicious muffins, and a variety of light bites and snacks perfect for any time of day. Each item is made with the finest ingredients to bring joy to your taste buds. Come and discover your new favorite treat!</p>
-            <a href="#"><p class="button-primary">The Menu</p></a>
+            <a href="menu"><p class="button-primary">The Menu</p></a>
         </div>
     </section>
 
@@ -68,7 +68,7 @@
             </div>
     </section>
 
-    <section class="opening-hours-seasonal-closures-grid section-gap">
+    <section class="opening-hours-seasonal-closures-grid section-gap #opening-hours">
         <div class="opening-time-seasonal-closures-image grid-image-left image"></div>
             <div class="standard-section__copy-container grid-copy-right">
                 <div class="opening-hours-heading-gap opening-hours-element-gap">
@@ -120,14 +120,18 @@
         </div>
     </section>
 
-    <section class="forms section-gap">
+    <section class="forms section-gap #contact-us">
         <div class="form__container">
             <p class="heading form__heading-gap">Message Us</p>
-            <form action="#" class="form__flex-container">
-                <input type="text" class="input" placeholder="Name">
-                <input type="email" class="input" placeholder="Email">
-                <input type="Phone" class="input" placeholder="Phone">
-                <textarea name="Message" class="input" id="" placeholder="Message"></textarea>
+            <form action="https://api.web3forms.com/submit" method="POST" class="form__flex-container">
+                <input type="hidden" name="access_key" value="#">
+                <input type="hidden" name="from_name" value="Saffron Messages">
+                <input type="hidden" name="subject" value="New Message">
+                <input type="text" name="Name" class="input" placeholder="Name" required>
+                <input type="email" name="Email" class="input" placeholder="Email" required>
+                <input type="Phone" name="Phone Number" class="input" placeholder="Phone" required>
+                <textarea name="Message" class="input" id="" placeholder="Message" required></textarea>
+                <input type="hidden" name="redirect" value="#">
                 <button type="submit" class="button-secondary form-button">Submit</button>
             </form>
         </div>
@@ -145,9 +149,9 @@
             <div class="footer__socials-container footer-element-gap">
                 <p class="heading-neutral footer__heading-gap">Socials</p>
                 <div class="footer__socials-flex-container">
-                    <img class="social-icon" src="img/facebook icon.png" alt="Facebook icon">
-                    <img class="social-icon" src="img/instagram icon.png" alt="Facebook icon">
-                    <img class="social-icon" src="img/twitter icon.png" alt="Facebook icon">
+                    <a href="#"><img class="social-icon" src="img/facebook icon.png" alt="Facebook icon"></a>
+                    <a href="#"><img class="social-icon" src="img/instagram icon.png" alt="Facebook icon"></a>
+                    <a href="#"><img class="social-icon" src="img/twitter icon.png" alt="Facebook icon"></a>
                 </div>
             </div>
             <div class="footer__contact-container footer-element-gap">
@@ -160,9 +164,9 @@
             <div class="footer__tandc-container">
                 <p class="heading-neutral footer__heading-gap">T's & C's</p>
                 <div class="footer__tandc-flex-container">
-                    <p class="link-type">Terms & Conditions</p>
-                    <p class="link-type">Privacy Policy</p>
-                    <p class="link-type">Cookie Policy</p>
+                    <a href="#"><p class="link-type">Terms & Conditions</p></a>
+                    <a href="#"><p class="link-type">Privacy Policy</p></a>
+                    <a href="#"><p class="link-type">Cookie Policy</p></a>
                 </div>
             </div>
         </div>

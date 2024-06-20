@@ -202,6 +202,7 @@ section{
     font-size: var(--font-size-small-);
     font-weight: var(--font-weight-bold-);
     color: var(--colour-primary-);
+    background-color: var(--colour-neutral-);
     padding-inline: var(--spacing-6-);
     padding-block: var(--spacing-8-);
     border-radius: 10px;
@@ -601,6 +602,23 @@ header{
 /*========== Menu Content Section End ========*/
 
 
+/*================ Success Page ===============*/
+.success-section{
+    width: 100vw;
+    max-width: 100vw;
+    height: 100vh;
+    max-height: 100vh;
+    background-color: var(--colour-primary-);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-7-);
+}
+.success-logo{
+    max-width: 250px;
+}
+
 /*========== hero Section ===================*/
 
 .hero-section{
@@ -624,6 +642,9 @@ header{
     background-size: cover;
     background-position: center-bottom;
 }
+
+
+
 
 
 /*============= Utility classes =========================*/
@@ -655,6 +676,10 @@ header{
 }
 .display-none-mobile-tablet{
     display: none;
+}
+
+.text-align-center{
+    text-align: center;
 }
 
 /*============ Block =================================*/
